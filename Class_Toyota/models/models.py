@@ -56,3 +56,11 @@ class Toyota:
         file = open("database/" + self.file, "w")
         data_in_json = json.dumps(data)
         file.write(data_in_json)
+
+    @classmethod
+    def update_by_id(cls, id):
+        autos = cls.get_data()
+        counter = 0
+        for auto in autos:
+            if id == auto["id"]:
+                print(auto["car_model"])
