@@ -1,24 +1,26 @@
-class Toyota:
-    def __init__(self, name):
-        self.name = name
+from models.models import Toyota
 
-    def drive(self):
-        print(self.name)
+while True:
+    print("1.Add new Cars\n" +
+          "2.Get all list cars\n" +
+          "3.Get cars by id\n" +
+          "4.Input id for car what need to modify color or gear\n" +
+          "5.Stop App\n")
+    flag = int(input("Choose menu item:\n"))
+    if flag == 1:
+        car = input("Input car model:\n")
+        shift_gear = input("Input shift_gear:\n")
+        change_color = input("Input car color:\n")
+        cars = Toyota(car, shift_gear, change_color)
+        cars.save()
+    elif flag == 2:
+        Toyota.get_all_cars()
+    elif flag == 3:
+        id = int(input("Type id to search:\n"))
+        Toyota.get_by_id(id)
+    elif flag == 4:
+        id = int(input("Type id for search:\n"))
+        Toyota.update_by_id(id)
 
-    def shift_gir(self):
-        print(self.name)
-
-    def change_color(self):
-        print(self.name)
-
-
-
-drive_version=Toyota((input("Please input name model: ")))
-shift_gir_version=Toyota((int(input("Please input gir: "))))
-change_color_version =Toyota((input("Please input color: ")))
-
-# shift_gir.shift_gir()
-# change_color.change_color()
-drive_version.drive()
-shift_gir_version.shift_gir()
-change_color_version.change_color()
+    elif flag == 5:
+        break
