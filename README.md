@@ -13,7 +13,7 @@ Create ability to get all employees which work in salons and plant.
 ### TASK-3-Lection-4
 Create table lessons with relation to teachers and rooms and upload dump for check.
 
-### TASK4-Leсtion-5
+### TASK-4-Leсtion-5
 1) Add class_id to table rozklad.
  2) Rework this query to work with class_in in rozklad (not at room_class).
 
