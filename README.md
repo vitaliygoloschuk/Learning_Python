@@ -1,19 +1,19 @@
 # All Home Works List:
 
-### TASK-1
+### TASK-1-Lection-2
 Create app with class Toyota with methods to create different cars with different engines and colors.
 Methods list:
 * drive
 * shift gear
 * change color
 
-### TASK-2
+### TASK-2-Lection-3
 Create ability to get all employees which work in salons and plant.
 
-### TASK-3
+### TASK-3-Lection-4
 Create table lessons with relation to teachers and rooms and upload dump for check.
 
-### TASK#4:
+### TASK#4-Leсtion-5
 1) Add class_id to table rozklad.
  2) Rework this query to work with class_in in rozklad (not at room_class).
 
