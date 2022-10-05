@@ -1,16 +1,16 @@
 # All Home Works List:
 
-###TASK-1
+### TASK-1
 Create app with class Toyota with methods to create different cars with different engines and colors.
 Methods list:
 * drive
 * shift gear
 * change color
 
-###TASK-2
+### TASK-2
 Create ability to get all employees which work in salons and plant.
 
-###TASK-3
+### TASK-3
 Create table lessons with relation to teachers and rooms and upload dump for check.
 
 ### TASK#4:
