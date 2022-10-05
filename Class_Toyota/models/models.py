@@ -42,10 +42,6 @@ class Toyota:
                 print("Not found with this id\n")
 
     def save(self):
-        # file = open("database/" + self.file, "r")
-        # data_in_json = file.read()
-        # data = json.loads(data_in_json)
-        # file.close()
         data = self.get_data()
         new_car = {"car_model": self.car, "amount_gear": self.shift_gear, "color": self.change_color}
         if len(data) > 0:
@@ -63,4 +59,14 @@ class Toyota:
         counter = 0
         for auto in autos:
             if id == auto["id"]:
+                new_gir = input("Please set new value for gear:\n ")
+                auto["amount_gear"] = new_gir
+                print()
                 print(auto["car_model"])
+                print(auto["amount_gear"])
+                print(auto["color"])
+                print()
+                break
+            counter += 1
+            if counter == len(autos):
+                print("Not found with this id\n")
