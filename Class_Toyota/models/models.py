@@ -60,7 +60,9 @@ class Toyota:
         for auto in autos:
             if id == auto["id"]:
                 new_gir = input("Please set new value for gear:\n ")
+                new_color = input("Please set new value for color:\n ")
                 auto["amount_gear"] = new_gir
+                auto["color"] = new_color
                 print()
                 print(auto["car_model"])
                 print(auto["amount_gear"])
@@ -70,3 +72,6 @@ class Toyota:
             counter += 1
             if counter == len(autos):
                 print("Not found with this id\n")
+            file = open("database/" + cls.file, "w")
+            data_in_json = json.dumps(autos)
+            file.write(data_in_json)
