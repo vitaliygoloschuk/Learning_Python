@@ -19,3 +19,6 @@ Create table lessons with relation to teachers and rooms and upload dump for che
 
 ##### TIPS:
 > SELECT t.first_name, t.last_name, l.name, r.number, c.name, rozklad.time FROM rozklad INNER JOIN lessons l ON l.id=rozklad.lesson_id INNER JOIN teachers t ON t.id=rozklad.teacher_id INNER JOIN rooms r ON r.id=rozklad.room_id INNER JOIN room_class rc ON rc.room_id=r.id INNER JOIN classes c ON c.id=rc.class_id WHERE time BETWEEN "11:00:00" AND "13:00:00";
+
+### TASK-5-Leсtion-6
+Create docker-compose and docker container with python script which will ping data api.github.com and print it
