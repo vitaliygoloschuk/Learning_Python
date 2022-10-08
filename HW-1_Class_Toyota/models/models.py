@@ -59,19 +59,26 @@ class Toyota:
         counter = 0
         for auto in autos:
             if id == auto["id"]:
-                new_gir = input("Please set new value for gear:\n ")
-                new_color = input("Please set new value for color:\n ")
-                auto["amount_gear"] = new_gir
+                new_gir = input("Please set new value for gear:\n")
+                for chg_gr in autos:
+                    tempory = chg_gr.get('id')
+                    if tempory == id:
+                        auto["amount_gear"] = new_gir
+                new_color = input("Please set new value for color:\n")
                 auto["color"] = new_color
+                for chg_clr in autos:
+                    tempory = chg_clr.get('id')
+                    if tempory == id:
+                        auto["color"] = new_color
                 print()
                 print(auto["car_model"])
                 print(auto["amount_gear"])
                 print(auto["color"])
                 print()
+                file = open("database/" + cls.file, "w")
+                data_in_json = json.dumps(autos)
+                file.write(data_in_json)
                 break
             counter += 1
             if counter == len(autos):
                 print("Not found with this id\n")
-            file = open("database/" + cls.file, "w")
-            data_in_json = json.dumps(autos)
-            file.write(data_in_json)

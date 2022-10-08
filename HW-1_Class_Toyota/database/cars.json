@@ -1,1 +1,1 @@
-[{"car_model": "Mercedes Benz", "amount_gear": "5", "color": "black", "id": 1}, {"car_model": "lada", "amount_gear": "4", "color": "red", "id": 2}, {"car_model": "suzuki", "amount_gear": "4", "color": "grey", "id": 3}, {"car_model": "hundai", "amount_gear": "6", "color": "brown", "id": 4}]
+[{"car_model": "Mercedes Benz", "amount_gear": "5", "color": "black", "id": 1}, {"car_model": "lada", "amount_gear": "2", "color": "RED", "id": 2}, {"car_model": "suzuki", "amount_gear": "4", "color": "grey", "id": 3}, {"car_model": "hundai", "amount_gear": "6", "color": "brown", "id": 4}]
