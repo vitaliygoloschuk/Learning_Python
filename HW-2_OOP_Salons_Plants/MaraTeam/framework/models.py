@@ -68,3 +68,14 @@ class Model(ABC):
             new_el["id"] = 1
         data.append(new_el)
         self.save_to_file("database/" + self.file, data)
+
+    @staticmethod
+    def all_people_plant(cls):
+        data = cls.get_data()
+        if len(data) > 0:
+            fields = data[0].keys()
+            for el in data:
+                for field in fields:
+                    if field == "id":
+                        continue
+                    print(el[field])
