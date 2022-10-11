@@ -35,6 +35,7 @@ while True:
     elif flag == 6:
         id = int(input("Type id to search: "))
         Employee.get_by_id(id)
+
     elif flag == 7:
         name = input("Salon name: ")
         address = input("Address: ")
@@ -46,6 +47,6 @@ while True:
     elif flag == 9:
         id = int(input("Type id to search: "))
         salon = Salon.get_by_id(id)
-        Salon.print_object([salon])
+        # Salon.print_object([salon])
     elif flag == 10:
         break
