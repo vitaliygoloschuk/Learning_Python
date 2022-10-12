@@ -1,0 +1,1 @@
+print ("I use Ubuntu 20.04 adn git version git version 2.25.1")

@@ -47,7 +47,7 @@ class Model(ABC):
                 if id == el["id"]:
                     return el
                 # Каунтер на випадок якшо елемент не знайшло
-                counter += 1
+                counter+=1
                 if counter == len(el):
                     print("Not found element with this id")
 
