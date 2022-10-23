@@ -25,3 +25,6 @@ Create table lessons with relation to teachers and rooms and upload dump for che
 
 ### TASK-6-Leсtion-6 (Docker)
 Create docker-compose and docker container with python script which will ping data api.github.com and print it
+
+### TASK-7-Leсtion-7 (Networking)
+Self learning about network

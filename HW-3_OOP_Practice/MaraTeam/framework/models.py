@@ -50,12 +50,12 @@ class Model(ABC):
                 if id == el["id"]:
                     return el
                 # Каунтер на випадок якшо елемент не знайшло
-                counter+=1
+                counter += 1
                 if counter == len(el):
                     print("Not found element with this id")
 
     @classmethod
-    def get_all_for_plants_salons(cls,factory):
+    def get_all_for_plants_salons(cls, factory):
 
         employees = cls.get_data()
         if len(employees) > 0:
@@ -64,6 +64,7 @@ class Model(ABC):
                     print(employee["name"])
                 # if employee["type_of_work"] == "plant":
                 #     print(employee["name"])
+
     @staticmethod
     def save_to_file(path_to_file, data):
         # Перезаписуєм данні в файл
