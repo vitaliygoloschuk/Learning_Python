@@ -4,7 +4,7 @@ services:
     web:
         build:
             dockerfile: ./docker/python/Dockerfile
-            context: ./
+            context: ./ #щоб докерфайл вважав що він знаходиться в flask intro
         ports:
             - "5000:5000"
         volumes:
