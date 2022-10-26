@@ -32,5 +32,5 @@ Self learning about network
 ### TASK-8-Leсtion-8 (Flask Intro)
 Create route for calculator if user type in url /calc/1/2 should display 3 in another case if user type in url /calc/3/5 should return 8
 
-### TASK-8-Leсtion-9 (Flask Practice)
+### TASK-9-Leсtion-9 (Flask Practice)
 Create a page which display details about plant, plant information and plant employees information.
