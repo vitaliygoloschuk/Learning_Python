@@ -32,5 +32,13 @@ Self learning about network
 ### TASK-8-Leсtion-8 (Flask Intro)
 Create route for calculator if user type in url /calc/1/2 should display 3 in another case if user type in url /calc/3/5 should return 8
 
-### TASK-9-Leсtion-9 (Flask Practice)
+### TASK-9-Leсtion-9 (Flask practice)
 Create a page which display details about plant, plant information and plant employees information.
+
+### TASK-10-Leсtion-10 (Flask and Rest)
+1. Rework your page which display details about Plant to work with SQLALCHEMY.
+2. Create Employee table
+
+### TASK-11-Leсtion-11 (Flask Practice)
+1. Create ability to update employee.
+2. Create ability to delete employee
