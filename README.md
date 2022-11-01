@@ -42,3 +42,6 @@ Create a page which display details about plant, plant information and plant emp
 ### TASK-11-Leсtion-11 (Flask Practice)
 1. Create ability to update employee.
 2. Create ability to delete employee
+
+### TASK-12-Leсtion-12 (Flask and SQLAclhemy)
+Add validation of data to registration.

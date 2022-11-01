@@ -31,12 +31,15 @@ class Model(ABC):
     def print_object(cls, objects: list):
         # Прінтуєм об'єкт
         if len(objects) > 0:
-            fields = objects[0].keys()
-            for ob in objects:
-                for field in fields:
-                    if field == "id":
-                        continue
-                    print(ob[field])
+            try:
+                fields = objects[0].keys()
+                for ob in objects:
+                    for field in fields:
+                        if field == "id":
+                            continue
+                        print(ob[field])
+            except AttributeError:
+                print("ID does not exist repeat with new id")
 
     @classmethod
     def get_by_id(cls, id):
@@ -47,9 +50,20 @@ class Model(ABC):
                 if id == el["id"]:
                     return el
                 # Каунтер на випадок якшо елемент не знайшло
-                counter+=1
+                counter += 1
                 if counter == len(el):
                     print("Not found element with this id")
+
+    @classmethod
+    def get_all_for_plants_salons(cls, factory):
+
+        employees = cls.get_data()
+        if len(employees) > 0:
+            for employee in employees:
+                if employee["type_of_work"] == factory:
+                    print(employee["name"])
+                # if employee["type_of_work"] == "plant":
+                #     print(employee["name"])
 
     @staticmethod
     def save_to_file(path_to_file, data):
@@ -57,17 +71,6 @@ class Model(ABC):
         file = open(path_to_file, "w")
         data_in_json = json.dumps(data)
         file.write(data_in_json)
-
-    @classmethod
-    def delete(cls, id):
-        elements = cls.get_data()
-        for i in range(len(elements)):
-            if elements[i]["id"] == id:
-                del elements[i]
-                break
-
-        cls.save_to_file("database/" + cls.file, elements)
-
 
     def save(self):
         data = self.get_data()

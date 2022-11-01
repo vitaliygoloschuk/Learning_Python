@@ -7,6 +7,15 @@ class Plant(Model):
     def __init__(self, name, location):
         self.name = name
         self.location = location
+    # @classmethod
+    # def get_plant_workers(cls):
+        # plant_diction = super().get_plant_workers(self)
+        # cls.print_object([plant_diction])
+        # get_plant_wrk = Employee.get_data()
+        # print(get_plant_wrk)
+
+
+
 
 
     def _protected_example(self):
@@ -43,6 +52,23 @@ class Employee(Model):
         cls.print_object([employee_dict])
         print("Employee work: ")
         cls.print_object([work_of_employee])
+
+    # @classmethod
+    # def get_all_for_plant(cls):
+    #     employees = cls.get_data()
+    #     if len(employees) > 0:
+    #         for employee in employees:
+    #             if employee["type_of_work"] == "plant":
+    #                 print(employee["name"])
+    #
+    # @classmethod
+    # def get_all_for_salon(cls):
+    #     employees = cls.get_data()
+    #     if len(employees) > 0:
+    #         for employee in employees:
+    #             if employee["type_of_work"] == "salon":
+    #                 print(employee["name"])
+
 
 
 class Salon(Model):
