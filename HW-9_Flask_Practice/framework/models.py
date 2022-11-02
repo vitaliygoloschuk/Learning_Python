@@ -28,6 +28,11 @@ class Model(ABC):
                     print(el[field])
 
     @classmethod
+    def get_all_flask(cls):
+        data = cls.get_data()
+        return data
+
+    @classmethod
     def print_object(cls, objects: list):
         # Прінтуєм об'єкт
         if len(objects) > 0:
@@ -71,6 +76,16 @@ class Model(ABC):
         file = open(path_to_file, "w")
         data_in_json = json.dumps(data)
         file.write(data_in_json)
+
+    @classmethod
+    def delete(cls, id):
+        elements = cls.get_data()
+        for i in range(len(elements)):
+            if elements[i]["id"] == id:
+                del elements[i]
+                break
+
+        cls.save_to_file("database/" + cls.file, elements)
 
     def save(self):
         data = self.get_data()

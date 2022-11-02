@@ -7,3 +7,6 @@ from models.models import Plant
 def main():
     plants = Plant.get_data()
     return render_template("index.html", plants=plants)
+
+
+# 01.54 ЗАДАЧА

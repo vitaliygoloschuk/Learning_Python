@@ -7,20 +7,19 @@ class Plant(Model):
     def __init__(self, name, location):
         self.name = name
         self.location = location
-    # @classmethod
-    # def get_plant_workers(cls):
-        # plant_diction = super().get_plant_workers(self)
-        # cls.print_object([plant_diction])
-        # get_plant_wrk = Employee.get_data()
-        # print(get_plant_wrk)
 
-
-
-
+    @classmethod
+    def get_plant_workers(cls, id):
+        plant_dictionary = super().get_by_id(id)
+        cls.print_object([plant_dictionary])
+        get_plant_wrk = Employee.get_data()
+        for el in get_plant_wrk:
+            if el['type_of_work'] == 'plant' and el == str(plant_dictionary['id']):
+                print(el['name'])
+                break
 
     def _protected_example(self):
         return "protected"
-
 
     def __private_example(self):
         return "private"
@@ -68,7 +67,6 @@ class Employee(Model):
     #         for employee in employees:
     #             if employee["type_of_work"] == "salon":
     #                 print(employee["name"])
-
 
 
 class Salon(Model):

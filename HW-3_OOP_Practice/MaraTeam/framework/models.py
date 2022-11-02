@@ -62,6 +62,7 @@ class Model(ABC):
             for employee in employees:
                 if employee["type_of_work"] == factory:
                     print(employee["name"])
+
                 # if employee["type_of_work"] == "plant":
                 #     print(employee["name"])
 

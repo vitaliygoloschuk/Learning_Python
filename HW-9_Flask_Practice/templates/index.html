@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home-work-9</title>
+    <title>Home-work-9-main-page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="/static/css/style.css" rel="stylesheet">
 </head>
@@ -36,6 +36,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">{{ plant["location"] }}</h6>
 <!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                 <a href="/delete-plant/{{ plant['id'] }}" class="card-link">Delete</a>
+                  <a href="/inform-plant/{{ plant['id'] }}" class="card-link">Details</a>
 <!--                <a href="#" class="card-link">Another link</a>-->
               </div>
             </div>
