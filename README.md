@@ -45,3 +45,6 @@ Create a page which display details about plant, plant information and plant emp
 
 ### TASK-12-Leсtion-12 (Flask and SQLAclhemy)
 Add validation of data to registration.
+
+### TASK-12-Leсtion-13 (Flask Practice)
+Create api endpoints for plant crud (CREATE, READ, UPDATE, DELETE)
