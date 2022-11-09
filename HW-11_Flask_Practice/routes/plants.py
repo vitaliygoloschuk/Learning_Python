@@ -16,7 +16,7 @@ def save_plant():
     location = request.form.get("location")
     plant = Plant(title=name, location=location)
     db.session.add(plant)
-    for employee_id in request.form.getlist("employees"):
+    for employee_id in request.form.getlist("employees"):   #це всьо засовуєм в 1 тразакцію
         employee = Employee.query.get(int(employee_id))
         employee.plant_id = plant.id
         db.session.add(employee)
