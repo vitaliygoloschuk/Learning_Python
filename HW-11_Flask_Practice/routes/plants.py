@@ -36,7 +36,7 @@ def delete_plant(id):
 @app.route("/edit-plant/<int:id>")
 def edit_plant(id):
     plant = Plant.query.get(id)
-    employees = Employee.query.all()
+    employees = Employee.query.all() # дістаєм всіх емпоєерів
     return render_template("add_plant.html", plant=plant, employees=employees)
 
 
