@@ -20,7 +20,7 @@ Create table lessons with relation to teachers and rooms and upload dump for che
 1) Add class_id to table rozklad.
 2) Rework this query to work with class_in in rozklad (not at room_class).
 
-##### TIPS:
+##### CHECK:
 > SELECT t.first_name, t.last_name, l.name, r.number, c.name, rozklad.time FROM rozklad INNER JOIN lessons l ON l.id=rozklad.lesson_id INNER JOIN teachers t ON t.id=rozklad.teacher_id INNER JOIN rooms r ON r.id=rozklad.room_id INNER JOIN room_class rc ON rc.room_id=r.id INNER JOIN classes c ON c.id=rc.class_id WHERE time BETWEEN "11:00:00" AND "13:00:00";
 
 ### TASK-6-Leсtion-6 (Docker)
@@ -48,3 +48,24 @@ Add validation of data to registration.
 
 ### TASK-13-Leсtion-13 (Flask Practice)
 Create api endpoints for plant crud (CREATE, READ, UPDATE, DELETE)
+
+### TASK-14-Leсtion-14 (Regular expressions)
+
+Написати regexp який розпізнає частини email-у (юзер частина, домен частину) причому розпізнає кожен окреми піддомен в окремій групі якщо в нас багаторівневий домен. Зробити це засобами regexp , або regexp  + python
+
+Optional:
+
+22 сторінка - Huge Example, спробувати написати python програму на базі регулярок, яка б розпізнавала  ввод юзера, таким чином що для кожного рядку у нас в результаті було дві дати: дата початку і дата завершення. У разі якщо присутня одна дата, то вважати її початковою, а кінцеву дату зробити 01.01.2100.
+
+На лекції я пояснював більше. В деяких рядках відстуня наприклад початкова дата. тоді її вирахувати згідно інформації про тривалість і кінцеву дату.
+
+Optional:
+23 сторінка презентації
+
+Написати python програму яка завантажує зміст посилання і проходиться по тексту шукаючи і розпізнаючи пари значень
+
+(посада,  email) за допомогою регулярних виразів.
+Тобто на виході нам треба мати список  усіх email усіх контаків навчального закладу.
+
+
+### TASK-15-Leсtion-15 (Flask + Templates + Sessions)
