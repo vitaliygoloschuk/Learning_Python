@@ -69,3 +69,12 @@ Optional:
 
 
 ### TASK-15-Leсtion-15 (Flask + Templates + Sessions)
+Create models, views and forms for Plants
+Create simple templates (for example you have auth logic)
+
+### TASK-16-Leсtion-16 (Flask Practice)
+налаштувати SMTP, та створити шаблони для імейлу по відновленню пароля
+
+
+### TASK-17-Leсtion-17 (Flask Practice)
+зробити рефакторинг коду і персоніфікувати темплейти
