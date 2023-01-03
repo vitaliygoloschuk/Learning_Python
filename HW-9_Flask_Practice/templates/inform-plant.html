@@ -30,13 +30,13 @@
 
 </nav>
 <div class="container">
-    {{ inf_plant.name }}
-    {{ inf_plant.location }}
+    {{ plant_information.name }}
+    {{ plant_information.location }}
 
 </div>
 <div class="container">
     Plant and Employee:
-    {% for index in inf_emploe %}
+    {% for index in employee_information %}
     {{ index }}
     {% endfor %}
 </div>

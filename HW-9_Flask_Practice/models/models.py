@@ -16,13 +16,13 @@ class Plant(Model):
         return "private"
 
     @classmethod
-    def get_by_id_pl(cls, id):
+    def get_information(cls, id):
 
         plant_dictionary = super().get_by_id(id) # витягує опис про завод по ід
         return plant_dictionary
 
     @classmethod
-    def get_by_id_empl(cls, id):
+    def get_information_employee(cls, id):
         plant_dictionary = super().get_by_id(id)  # витягує опис про завод по ід
         employee_dict = Employee.get_data()
         new_element=[]
