@@ -27,7 +27,7 @@ def save_plant():
 @app.route("/delete-plant/<int:id>")
 def delete_plant(id):
     plant = Plant.query.get(id)
-    print(plant.id)
+    # print(plant.id)
     db.session.delete(plant)
     db.session.commit()
     return redirect("/")

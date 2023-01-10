@@ -34,7 +34,7 @@ def add_employee():
 @app.route("/delete-employee/<int:id>")
 def delete_employee(id):
     employee = Employee.query.get(id)
-    print(employee.id)
+    # print(employee.id)
     db.session.delete(employee)
     db.session.commit()
     return redirect("/")
