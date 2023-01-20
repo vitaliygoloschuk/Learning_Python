@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Companyes</h1>
+  <hr>
+  {% for company in companies %}
+    <div class="col-4" id="up">
+      <div class="p-3 border bg-light row justify-content-between">
+        <div>
+          <h5 class="card-title">{{ company.name }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ company.location }}</h6>
+          <div>
+            <a href="/delete-company/{{ company.id }}" button type="button" class="btn btn-secondary btn-sm">Delete</a>
+            <a href="/update-company/{{ company.id }}" button type="button" class="btn btn-primary btn-sm">Update</a>
+          </div>
+        </div>
+        <div>
+          <h5><a href="/staff/{{ company.name }}">{{ company.employees|length }} employees</a></h5>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
