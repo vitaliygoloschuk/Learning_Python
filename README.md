@@ -88,3 +88,6 @@ Optional:
 1. Add ability to delete and update product using forms if user is_admin or is_staff or it's product owner
 2. Add ability to minus count of one element
 3. Add menu items to header
+
+### TASK-26-Leсtion-26 (Django Practice)
+створити та запустити проект за допомогою https://github.com/cookiecutter/cookiecutter-django
