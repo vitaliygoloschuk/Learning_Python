@@ -79,7 +79,12 @@ Optional:
 ### TASK-17-Leсtion-17 (Flask Practice)
 зробити рефакторинг коду і персоніфікувати темплейти
 
-### TASK-17-Leсtion-17 (Django Practice)
+### TASK-22-Leсtion-22 (Django Practice)
 1. Create ability to add products to category when you add category
 2. Create ability to update category
 3**. Create ability to add images to the products
+
+### TASK-24-Leсtion-24 (Django Practice)
+1. Add ability to delete and update product using forms if user is_admin or is_staff or it's product owner
+2. Add ability to minus count of one element
+3. Add menu items to header
